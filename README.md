@@ -1,17 +1,19 @@
 <h1 align="center">OKR Management</h1>
 
 <div align="center">
-  <img src="./public/img/1.png" alt="OKRs Screenshot 1" width="200px">
-  <img src="./public/img/2.png" alt="OKRs Screenshot 2" width="200px">
-  <img src="./public/img/3.png" alt="OKRs Screenshot 3" width="200px">
-  <img src="./public/img/4.png" alt="OKRs Screenshot 4" width="200px">
+  <img src="./public/img/1.png" alt="OKRs Screenshot 1" width="180px">
+  <img src="./public/img/2.png" alt="OKRs Screenshot 2" width="180px">
+  <img src="./public/img/3.png" alt="OKRs Screenshot 3" width="180px">
+  <img src="./public/img/4.png" alt="OKRs Screenshot 4" width="180px">
+   <img src="./public/img/5.png" alt="OKRs Screenshot 4" width="180px">
+    <img src="./public/img/6.png" alt="OKRs Screenshot 4" width="180px">
 </div>
 
 ---
 
 ## About
 
-This project is a front-end web application for OKR management, and it served as a technical challenge during the selection process for a **Front-End Dev** position. It was built with Next.js and styled with Tailwind CSS for rapid development and a responsive design.
+This project is a front-end web application for OKR management, and it served as a technical challenge during the selection process for a **Front-End Dev** position. It was built with Next.js and Tailwind CSS.
 
 ## Technologies
 
@@ -19,7 +21,6 @@ This project is a front-end web application for OKR management, and it served as
 *   [TypeScript](https://www.typescriptlang.org/)
 *   [Tailwind CSS](https://tailwindcss.com/)
 *   [npm](https://www.npmjs.com/)
-*   [Mockapi.io](https://mockapi.io/)
 *   [Axios](https://axios-http.com/ptbr/docs/intro)
 
 ## Getting Started

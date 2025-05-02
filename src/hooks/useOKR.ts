@@ -23,8 +23,9 @@ export function useOKR() {
 
     const createOkr = async (name: string) => {
         try {
-            await api.createObjective(name);  // Passando apenas o 'name'
-            fetchOKRs();  // Atualiza a lista de OKRs
+            await api.createObjective(name);
+            fetchOKRs();
+
         } catch (error) {
             console.error("Erro ao criar OKR:", error);
         }
