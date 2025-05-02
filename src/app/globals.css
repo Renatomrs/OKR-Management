@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #F8F8F8;
+  --background: linear-gradient(to bottom right, #F3F4F6, #DBEAFE, #F3F4F6);
   --foreground: #1F2937;
 }
 
@@ -12,6 +12,5 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 input::placeholder { color: #6B7280; }

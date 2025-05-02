@@ -4,10 +4,11 @@ interface formProps {
     title: string;
     text: string;
     onClose: () => void;
+    onClick: any;
     children: ReactNode;
 }
 
-export default function Form({ title, text, onClose, children }: formProps) {
+export default function Form({ title, text, onClose, onClick, children }: formProps) {
     return (
         <div className="w-11/12 max-w-[520px] py-8 bg-white rounded-xl">
             <div className="w-10/12 mx-auto">
@@ -24,6 +25,14 @@ export default function Form({ title, text, onClose, children }: formProps) {
                 </div>
 
                 {children}
+
+                <button
+                    className="w-full h-12 mx-auto bg-blue-600 text-base text-white rounded-md mt-5"
+                    type="button"
+                    onClick={onClick}
+                >
+                    Salvar
+                </button>
 
                 <div className="w-full flex justify-center items-center mt-8">
                     <div className="flex flex-1 border-b border-gray-200" />
