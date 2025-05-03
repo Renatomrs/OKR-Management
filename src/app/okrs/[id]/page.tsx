@@ -46,8 +46,7 @@ export default function OkrDetailsPage() {
             setOkr(data);
 
         } catch (err: any) {
-            setError("Erro ao buscar OKR. Tente novamente mais tarde.");
-            console.error("Erro ao buscar OKR:", err.message);
+            setError(err.message);
 
         } finally {
             setLoading(false);
@@ -186,7 +185,23 @@ export default function OkrDetailsPage() {
                         }}
                     />
                 ) : (
-                    <p className="text-red-500">Objetivo não encontrado.</p>
+                    <>
+                        <p className="text-red-500">Objetivo não encontrado.</p>
+
+                        <div className="w-full min-h-full mx-auto bg-transparent flex flex-col justify-center items-center rounded-xl">
+                            <div className="w-full mx-auto">
+                                <p className="text-lg text-gray-700 mb-6">
+                                    O OKR que você está tentando acessar não existe ou foi removido.
+                                </p>
+                                <a
+                                    className="w-full md:max-w-[247px] flex justify-center items-center bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition shadow-md"
+                                    href="/okrs"
+                                >
+                                    Voltar para a lista de OKRs
+                                </a>
+                            </div>
+                        </div>
+                    </>
                 )}
             </main>
 
