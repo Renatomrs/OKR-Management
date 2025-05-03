@@ -61,9 +61,36 @@ export default function OkrDetailsPage() {
 
     }, [id, fetchOkr]);
 
+    function validateResultKey(name: string, deliveries: Delivery[]): { valid: boolean; error?: string } {
+        const valueRegex = /^(100|[1-9]?[0-9])$/;
+
+        if (!name.trim()) {
+            return { valid: false, error: "O nome do Resultado-Chave não pode estar vazio." };
+        }
+
+        for (let i = 0; i < deliveries.length; i++) {
+            const delivery = deliveries[i];
+
+            if (!delivery.name.trim()) {
+                return { valid: false, error: `O nome da entrega #${i + 1} está vazio.` };
+            }
+
+            if (!delivery.value.trim()) {
+                return { valid: false, error: `O valor da entrega #${i + 1} está vazio.` };
+            }
+
+            if (!valueRegex.test(delivery.value)) {
+                return { valid: false, error: `O valor da entrega #${i + 1} deve ser um número inteiro entre 0 e 100, sem zeros à esquerda.` };
+            }
+        }
+
+        return { valid: true };
+    }
+
     const handleCreateResultKeyWithDelivery = async () => {
-        if (!newResultKeyName.trim() || deliveries.some(d => !d.name.trim() || !d.value.trim())) {
-            alert("Preencha todos os campos.");
+        const { valid, error } = validateResultKey(newResultKeyName, deliveries);
+        if (!valid) {
+            alert(error);
             return;
         }
 
@@ -100,6 +127,12 @@ export default function OkrDetailsPage() {
 
     const handleUpdateResultKey = async () => {
         if (!formValues || !editingResultKey || !okr?.id) return;
+
+        const { valid, error } = validateResultKey(formValues.name, formValues.deliveries);
+        if (!valid) {
+            alert(error);
+            return;
+        }
 
         try {
             const updated = await updateResultKey(okr.id, editingResultKey, formValues);
