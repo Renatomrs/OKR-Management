@@ -127,7 +127,7 @@ export default function ObjectiveCard({ item, onClick, addResultKey, onDelete }:
                                 </div>
 
                                 <div className="w-full flex justify-center items-center">
-                                    <div className="w-full h-4 flex mx-auto bg-blue-200 rounded-full relative">
+                                    <div className="w-full h-4 flex mx-auto bg-blue-100 rounded-full relative">
                                         <div className="bg-blue-400 rounded-full" style={{ width: `${progress}%` }} />
 
                                         <span className="w-full h-4 flex justify-center items-center text-xs text-black font-bold absolute left-0 right-0">{progress}%</span>

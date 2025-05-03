@@ -17,13 +17,13 @@ export default function ObjectiveCardSkeleton() {
 
                 <div className="w-full py-8 bg-white rounded-xl shadow-md">
                     <div className="w-11/12 mx-auto">
-                        <h2 className="w-56 h-3 bg-gray-400 animate-pulse" />
+                        <h2 className="w-56 h-4 bg-gray-300 animate-pulse" />
 
                         <div className="w-full h-4 flex mx-auto mt-3 bg-gray-200 rounded-full relative">
-                            <div className="bg-gray-400 rounded-full animate-pulse" style={{ width: `${47}%` }} />
+                            <div className="bg-gray-300 rounded-full animate-pulse" style={{ width: `${47}%` }} />
 
                             <span className="w-full h-4 flex justify-center items-center text-xs text-black font-bold absolute left-0 right-0">
-                                %
+                                0%
                             </span>
                         </div>
 
@@ -41,14 +41,14 @@ export default function ObjectiveCardSkeleton() {
 
                         <div className="w-full border-b border-gray-100 last:border-b-0 pb-2.5 mt-8">
                             <div className="w-full">
-                                <h2 className="w-40 h-3 bg-gray-400 animate-pulse" />
+                                <h2 className="w-40 h-4 bg-gray-300 animate-pulse" />
                             </div>
 
                             <div className="w-full flex justify-center items-center">
                                 <div className="w-full h-4 flex mx-auto bg-gray-200 rounded-full relative">
-                                    <div className="bg-gray-400 rounded-full animate-pulse" style={{ width: `${77}%` }} />
+                                    <div className="bg-gray-300 rounded-full animate-pulse" style={{ width: `${77}%` }} />
 
-                                    <span className="w-full h-4 flex justify-center items-center text-xs text-black font-bold absolute left-0 right-0">%</span>
+                                    <span className="w-full h-4 flex justify-center items-center text-xs text-black font-bold absolute left-0 right-0">0%</span>
                                 </div>
 
                                 <button
@@ -69,21 +69,21 @@ export default function ObjectiveCardSkeleton() {
 
                             <ul className="w-full mt-5">
                                 <li className="w-full mb-2.5 flex justify-between items-center">
-                                    <p className="w-60 h-3 bg-gray-400 animate-pulse" />
+                                    <p className="w-60 h-3 bg-gray-300 animate-pulse" />
 
-                                    <span className="w-12 h-3 bg-gray-400 animate-pulse flex justify-end items-center ml-2" />
+                                    <span className="w-12 h-3 bg-gray-300 animate-pulse flex justify-end items-center ml-2" />
                                 </li>
 
                                 <li className="w-full mb-2.5 flex justify-between items-center">
-                                    <p className="w-60 h-3 bg-gray-400 animate-pulse" />
+                                    <p className="w-60 h-3 bg-gray-300 animate-pulse" />
 
-                                    <span className="w-12 h-3 bg-gray-400 animate-pulse flex justify-end items-center ml-2" />
+                                    <span className="w-12 h-3 bg-gray-300 animate-pulse flex justify-end items-center ml-2" />
                                 </li>
 
                                 <li className="w-full mb-2.5 flex justify-between items-center">
-                                    <p className="w-60 h-3 bg-gray-400 animate-pulse" />
+                                    <p className="w-60 h-3 bg-gray-300 animate-pulse" />
 
-                                    <span className="w-12 h-3 bg-gray-400 animate-pulse flex justify-end items-center ml-2" />
+                                    <span className="w-12 h-3 bg-gray-300 animate-pulse flex justify-end items-center ml-2" />
                                 </li>
                             </ul>
                         </div>
